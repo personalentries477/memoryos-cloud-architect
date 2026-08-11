@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "cockroachdb"
+}
+
+model Memory {
+
+  id String @id @default(uuid())
+
+  title String
+
+  prompt String
+
+  response String
+
+  createdAt DateTime @default(now())
+
+}
