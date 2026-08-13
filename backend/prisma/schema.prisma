@@ -8,14 +8,11 @@ datasource db {
 
 model Memory {
 
-  id String @id @default(uuid())
-
-  title String
-
-  prompt String
-
-  response String
-
-  createdAt DateTime @default(now())
-
+  id          String   @id @default(uuid())
+  title       String
+  project     String
+  prompt      String
+  response    String
+  memoryType  String
+  createdAt   DateTime @default(now())
 }

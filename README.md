@@ -5,6 +5,10 @@ npm install @prisma/client prisma @aws-sdk/client-bedrock-runtime class-validato
 
 npm install -D @types/uuid --save
 
+npx prisma generate
+npx prisma db push
+
+winget install --id AWSCLI.AWSCLIV2
 # Folder Structure
 
 memory
